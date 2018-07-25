@@ -19,7 +19,7 @@ public class ArticleVote {
         conn.select(15);
 
         String articleId = postArticle(
-                conn, "username", "A title", "http://www.google.com");
+                conn, "username", "AbstractBorder title", "http://www.google.com");
         System.out.println("We posted a new article with id: " + articleId);
         System.out.println("Its HASH looks like:");
         Map<String, String> articleData = conn.hgetAll("article:" + articleId);

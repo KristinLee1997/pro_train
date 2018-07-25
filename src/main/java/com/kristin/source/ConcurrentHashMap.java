@@ -2895,7 +2895,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V>
     }
 
     /**
-     * A node inserted at head of bins during transfer operations.
+     * AbstractBorder node inserted at head of bins during transfer operations.
      */
     static final class ForwardingNode<K, V> extends Node<K, V> {
         final Node<K, V>[] nextTable;
@@ -2935,7 +2935,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V>
     }
 
     /**
-     * A place-holder node used in computeIfAbsent and compute
+     * AbstractBorder place-holder node used in computeIfAbsent and compute
      */
     static final class ReservationNode<K, V> extends Node<K, V> {
         ReservationNode() {
@@ -2948,7 +2948,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V>
     }
 
     /**
-     * A padded cell for distributing counts.  Adapted from LongAdder
+     * AbstractBorder padded cell for distributing counts.  Adapted from LongAdder
      * and Striped64.  See their internal docs for explanation.
      */
     @sun.misc.Contended
@@ -4129,7 +4129,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V>
     }
 
     /**
-     * A view of a ConcurrentHashMap as a {@link Set} of keys, in
+     * AbstractBorder view of a ConcurrentHashMap as a {@link Set} of keys, in
      * which additions may optionally be enabled by mapping to a
      * common value.  This class cannot be directly instantiated.
      * See {@link #keySet() keySet()},
@@ -4266,7 +4266,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V>
     }
 
     /**
-     * A view of a ConcurrentHashMap as a {@link Collection} of
+     * AbstractBorder view of a ConcurrentHashMap as a {@link Collection} of
      * values, in which additions are disabled. This class cannot be
      * directly instantiated. See {@link #values()}.
      */
@@ -4329,7 +4329,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V>
     }
 
     /**
-     * A view of a ConcurrentHashMap as a {@link Set} of (key, value)
+     * AbstractBorder view of a ConcurrentHashMap as a {@link Set} of (key, value)
      * entries.  This class cannot be directly instantiated. See
      * {@link #entrySet()}.
      */
